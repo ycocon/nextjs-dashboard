@@ -86,3 +86,5 @@ export type InvoiceForm = {
   amount: number;
   status: 'pending' | 'paid';
 };
+
+export type CustomerForm = Omit<Customer, 'image_url'>;
